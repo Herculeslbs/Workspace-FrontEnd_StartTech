@@ -1,57 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boutique do Boleiro</title>
     <!-- CSS DO BOOTSTRAP -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- MEU CSS -->
     <link rel="stylesheet" type="text/css" href="css/default.css" />
 
     <!-- JAVASCRIPT DO BOOTSTRAP -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <!--  AQUI É O TÍTULO DA MINHA PÁGINA  -->
+    <!--  Cabeçalho (header)  -->
     <header id="cabecalho">
-              <!--Painel de navegação inicio-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-        <div class="container-fluid">
-          <img src="images/logo_oficial_2_boutique_130x@2x.avif" class="navbar-brand fw-bold" href="#"></img>
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Outros
+        <!--Painel de navegação (navbar)-->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a href="home.html">
+                    <img src="images/logo_oficial_2_boutique_130x@2x.avif" alt="logo Boutique do Boleiro" width="150px">
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Projeto</a></li>
-                  <li><a class="dropdown-item" href="#">Contato</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Certificados</a></li>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Quem Somos</a></li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Since 2022</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Procurar</button>
-            </form>
-          </div>
-        </div>
-      </nav>  
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="O que está buscando?"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </nav>
     </header>
     <main id="principal">
         <div class="container">
@@ -71,7 +67,9 @@
                             <img src="images/blusa.png" alt="Blusa Azul" />
                             <h3>Blusa de lã</h3>
                             <p class="preco">R$ 89,90</p>
-                            <a class="botao" href="https://api.whatsapp.com/send?phone=5521970160340&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank">Clique para informações</a>
+                            <a class="botao"
+                                href="https://api.whatsapp.com/send?phone=5521970160340&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+                                target="_blank">Clique para informações</a>
                         </div>
                     </li>
                     <li class="col-lg-4 col-sm-12">
@@ -79,7 +77,9 @@
                             <img src="images/gorro.png" alt="Gorro" />
                             <h3>Gorro com forro</h3>
                             <p class="preco">R$ 39,90</p>
-                            <a class="botao" href="https://api.whatsapp.com/send?phone=5521970160340&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank">Clique para informações</a>
+                            <a class="botao"
+                                href="https://api.whatsapp.com/send?phone=5521970160340&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+                                target="_blank">Clique para informações</a>
                         </div>
                     </li>
                     <li class="col-lg-4 col-sm-12">
@@ -87,7 +87,9 @@
                             <img src="images/luva.png" alt="Luvas" />
                             <h3>Luva reforçada</h3>
                             <p class="preco">R$ 29,90</p>
-                            <a class="botao" href="https://api.whatsapp.com/send?phone=5521970160340&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank">Clique para informações</a>
+                            <a class="botao"
+                                href="https://api.whatsapp.com/send?phone=5521970160340&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+                                target="_blank">Clique para informações</a>
                         </div>
                     </li>
                 </ul>
@@ -98,9 +100,13 @@
                 </div>
                 <div class="col-lg-6 texto" id="texto">
                     <h2>Quem é a Maria?</h2>
-                    <p>Maria é uma apaixonada pelo mundo das linhas, agulhas e criações artesanais desde muito jovem.</p>
-                    <p>Com habilidade e dedicação, Maria aprimorou suas técnicas de tricô ao longo dos anos, transformando os fios em verdadeiras obras de arte. Seus produtos são cuidadosamente confeccionados, utilizando as melhores matérias-primas e com um olhar atento aos detalhes.</p>
-                    <p>Na lojinha de tricô da Maria, você encontrará uma variedade de peças feitas à mão, que combinam conforto, elegância e estilo.</p>
+                    <p>Maria é uma apaixonada pelo mundo das linhas, agulhas e criações artesanais desde muito jovem.
+                    </p>
+                    <p>Com habilidade e dedicação, Maria aprimorou suas técnicas de tricô ao longo dos anos,
+                        transformando os fios em verdadeiras obras de arte. Seus produtos são cuidadosamente
+                        confeccionados, utilizando as melhores matérias-primas e com um olhar atento aos detalhes.</p>
+                    <p>Na lojinha de tricô da Maria, você encontrará uma variedade de peças feitas à mão, que combinam
+                        conforto, elegância e estilo.</p>
                     <a class="btn btn-lg" href="#">Leia mais</a>
                 </div>
             </section>
@@ -130,12 +136,13 @@
                     <div class="input-group">
                         <input type="email" class="form-control" placeholder="Digite seu e-mail..." />
                         <div class="input-group-append">
-                          <button class="btn btn-outline-secondary" type="button" >Enviar</button>
+                            <button class="btn btn-outline-secondary" type="button">Enviar</button>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
