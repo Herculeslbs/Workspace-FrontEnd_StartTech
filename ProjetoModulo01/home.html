@@ -8,19 +8,10 @@
     <!-- CSS DO BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- MEU CSS -->
     <link rel="stylesheet" type="text/css" href="css/default.css" />
-
-    <!-- JAVASCRIPT DO BOOTSTRAP -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -40,77 +31,95 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="O que está buscando?"
                         aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">
+                    <button class="btn btn-outline-secondary" type="submit">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                            <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                         </svg>
                     </button>
                 </form>
             </div>
         </nav>
     </header>
-    <main id="principal">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-12">
-                    <h1>Bem vindo a loja de tricot da Maria</h1>
-                    <p>Aqui na minha loja você encontra roupas de qualidade e 100% feitas a mão</p>
-                </div>
-            </div>
 
-            <section id="produtos">
-                <h2>Lista de produtos</h2>
-                <!-- AQUI É MINHA LISTA -->
-                <ul class="row">
-                    <li class="col-lg-4 col-sm-12">
-                        <div class="produto">
-                            <img src="images/blusa.png" alt="Blusa Azul" />
-                            <h3>Blusa de lã</h3>
-                            <p class="preco">R$ 89,90</p>
-                            <a class="botao"
-                                href="https://api.whatsapp.com/send?phone=5521970160340&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
-                                target="_blank">Clique para informações</a>
-                        </div>
-                    </li>
-                    <li class="col-lg-4 col-sm-12">
-                        <div class="produto">
-                            <img src="images/gorro.png" alt="Gorro" />
-                            <h3>Gorro com forro</h3>
-                            <p class="preco">R$ 39,90</p>
-                            <a class="botao"
-                                href="https://api.whatsapp.com/send?phone=5521970160340&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
-                                target="_blank">Clique para informações</a>
-                        </div>
-                    </li>
-                    <li class="col-lg-4 col-sm-12">
-                        <div class="produto">
-                            <img src="images/luva.png" alt="Luvas" />
-                            <h3>Luva reforçada</h3>
-                            <p class="preco">R$ 29,90</p>
-                            <a class="botao"
-                                href="https://api.whatsapp.com/send?phone=5521970160340&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
-                                target="_blank">Clique para informações</a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section id="quem-somos" class="row">
-                <div class="col-lg-6">
-                    <img src="images/quem-somos.png" alt="Foto da Maria tricotando" />
+    <main id="principal">
+        <!--  Carrosel  -->
+        <section id="carrosel">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div class="col-lg-6 texto" id="texto">
-                    <h2>Quem é a Maria?</h2>
-                    <p>Maria é uma apaixonada pelo mundo das linhas, agulhas e criações artesanais desde muito jovem.
-                    </p>
-                    <p>Com habilidade e dedicação, Maria aprimorou suas técnicas de tricô ao longo dos anos,
-                        transformando os fios em verdadeiras obras de arte. Seus produtos são cuidadosamente
-                        confeccionados, utilizando as melhores matérias-primas e com um olhar atento aos detalhes.</p>
-                    <p>Na lojinha de tricô da Maria, você encontrará uma variedade de peças feitas à mão, que combinam
-                        conforto, elegância e estilo.</p>
-                    <a class="btn btn-lg" href="#">Leia mais</a>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/1_1400x.webp" class="d-block w-100" alt="Promoção frete gratis">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/2_1300x.webp" class="d-block w-100" alt="Promoção leve mais pague menos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/3_1300x.webp" class="d-block w-100" alt="Promoção coleção retrô">
+                    </div>
                 </div>
-            </section>
-        </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+<!--  Seção Mais Pedidos  -->
+        <section class="mais-pedidos">
+            <h2>As mais pedidas do momento</h2>
+            <ul class="row">
+                <li class="col-lg-4 col-sm-12">
+                    <div class="produto">
+                        <img src="images/camisa1frente.webp" alt="Camisa Borussia Dortmund Black Edição Especial 23/24" />
+                        <h3>Camisa Borussia Dortmund Black Edição Especial 23/24</h3>
+                        <p class="preco">R$ 169,00</p>
+                        <a class="botao"
+                            href="https://api.whatsapp.com/send?phone=5521970160340&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+                            target="_blank">Clique para informações</a>
+                    </div>
+                </li>
+                <li class="col-lg-4 col-sm-12">
+                    <div class="produto">
+                        <img src="images/camisa2.jpg" alt="Camisa Bayern Reserva 22/23 - Versão Torcedor" />
+                        <h3>Camisa Bayern Reserva 22/23 - Versão Torcedor</h3>
+                        <p class="preco">R$ 169,00</p>
+                        <a class="botao"
+                            href="https://api.whatsapp.com/send?phone=5521970160340&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+                            target="_blank">Clique para informações</a>
+                    </div>
+                </li>
+                <li class="col-lg-4 col-sm-12">
+                    <div class="produto">
+                        <img src="images/camisa3.jpg" alt="Camisa Frankfurt Titular 21/22 - Versão Torcedor" />
+                        <h3>Camisa Frankfurt Titular 21/22 - Versão Torcedor</h3>
+                        <p class="preco">R$ 169,00</p>
+                        <a class="botao"
+                            href="https://api.whatsapp.com/send?phone=5521970160340&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+                            target="_blank">Clique para informações</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    <!--  Seção Contato  -->
+        <section class="contato">
+            <a href="https://api.whatsapp.com/send?phone=5521970160340&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es">
+                <img src="images/contato1400x.webp" alt="Imagem de contato">
+            </a>
+        </section>
+        
     </main>
     <footer id="rodape">
         <div class="container">
@@ -143,6 +152,18 @@
             </div>
         </div>
     </footer>
+    <!-- JAVASCRIPT DO BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+</body>
+
 
 </html>

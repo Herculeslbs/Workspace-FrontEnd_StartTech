@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #737b97;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+#cabecalho {
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid #e5e5e5;
+}
+#cabecalho img {
+  width: 130px;
+}
+#cabecalho ul {
+  display: flex;
+  column-gap: 10vw;
+  margin: 0;
+}
+#cabecalho a {
+  color: #737b97;
+  text-decoration: none;
+  font-weight: 600;
+}
+#cabecalho a:hover {
+  opacity: 0.5;
+}
+#cabecalho input {
+  width: 300px;
+}
+#carrosel {
+  margin-top: 50px;
+  width: 95%;
+  margin-left: 30px;
+}
+.mais-pedidos {
+  margin-top: 50px;
+  padding: 50px;
+}
+.mais-pedidos h2 {
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 5px solid #737b97;
+  margin-bottom: 50px;
+}
+.produto {
+  padding: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.04);
+}
+.produto a {
+  margin-top: 10px;
+}
+.produto h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.produto img {
+  width: 100%;
+}
+.preco {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0fb930;
+}
+.botao {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  width: calc(100% - 30px);
+  background-color: #0fb930;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+.botao:hover {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(0, 87, 0);
+  transition: background-color 1s;
+}
+.contato {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.contato img {
+  width: 100%;
+}
+#rodape {
+  border-top: 10px solid #17baba;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 90px;
+  background-color: #000e43;
+  color: white;
+}
+#rodape h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff;
+}
+#rodape li,
+#rodape p {
+  color: #ffffff;
+  line-height: 1.75em;
+}
+#rodape a {
+  color: #f1e1f4;
+}
+#rodape button {
+  color: #ffffff;
+  background-color: #ba67c8;
+}
+
+
+#quem-somos img {
+  width: 100%;
+}
+
+#quem-somos .texto {
+  padding-left: 40px;
+}
+
+#quem-somos h2 {
+  font-family: "Merriweather", serif;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #3c4e58;
+}
+
+#quem-somos a,
+#contato input[type="submit"] {
+  font-family: "Merriweather", serif;
+  margin-top: 20px;
+  background-color: #ba67c8;
+  color: white;
+}
+
+#contato form {
+  padding-top: 40px;
+}
+
+@media (max-width: 768px) {
+  #logo img {
+    width: 320px;
+  }
+  #menu {
+    background-color: #5d3364;
+    padding: 0;
+  }
+  #menu ul {
+    padding-top: 12px;
+    justify-content: space-between;
+  }
+
+  #menu ul li {
+    padding: 0 18px;
+  }
+  #principal h1 {
+    font-size: 32px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    line-height: 48px;
+  }
+  #principal p {
+    text-align: center;
+  }
+  #texto p {
+    text-align: left;
+  }
+  #rodape .col-lg-4 {
+    padding-bottom: 40px;
+  }
+  #contato h1 {
+    padding-top: 30px;
+  }
+}
