@@ -108,21 +108,30 @@
   font-weight: 600;
   margin-bottom: 20px;
   font-size: 24px;
-  color: #ffffff;
+  color: white;
+}
+#rodape ul {
+  padding: 0;
 }
 #rodape li,
 #rodape p {
-  color: #ffffff;
+  color: white;
   line-height: 1.75em;
+  font-weight: 400;
 }
 #rodape a {
-  color: #f1e1f4;
+  color: white;
+  text-decoration: none;
 }
 #rodape button {
-  color: #ffffff;
-  background-color: #ba67c8;
+  color: white;
+  background-color: #0fb930;
 }
-
+#rodape button:hover {
+  color: white;
+  background-color: rgb(0, 87, 0);
+  transition: background-color 1s;
+}
 
 #quem-somos img {
   width: 100%;
