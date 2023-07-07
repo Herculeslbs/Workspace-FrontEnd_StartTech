@@ -4,35 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Atividade de Fixação 01</title>
 </head>
 
 <body>
     <h1>Atividades de fixação 01 - Variáveis, entradas e saídas</h1>
-    <h2>Digite as 4 notas bimestrais</h2>
-    <form>
+    <h3>1 - Faça um Programa que peça as 4 notas bimestrais e mostre a média.</h3>
+    <form class="form">
         <label for="n1">Nota 1° Bimestre</label>
         <input type="number" name="n1" id="n1" placeholder="8,5">
-        <input type="submit" id="send1" value="Enviar">
+        <input class="button" type="submit" id="send1" value="Enviar">
 
         <label for="n2">Nota 2° Bimestre</label>
         <input type="number" name="n2" id="n2" placeholder="8,5">
-        <input type="submit" id="send2" value="Enviar">
+        <input class="button" type="submit" id="send2" value="Enviar">
 
         <label for="n3">Nota 3° Bimestre</label>
         <input type="number" name="n3" id="n3" placeholder="8,5">
-        <input type="submit" id="send3" value="Enviar">
+        <input class="button" type="submit" id="send3" value="Enviar">
 
         <label for="n4">Nota 4° Bimestre</label>
         <input type="number" name="n4" id="n4" placeholder="8,5">
-        <input type="submit" id="send4" value="Enviar">
+        <input class="button" type="submit" id="send4" value="Enviar">
 
-        <label for="n4">Média das notas</label>
-        <input type="number" name="n4" id="n4">
-        <input type="submit" id="media" value="Calcular">
-        
+        <label for="resultado_media">Média das notas</label>
+        <input type="number" name="resultado_media" id="resultado_media">
+        <input class="button" type="submit" id="media" value="Calcular">
     </form>
 
+    <h3>2 - Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.</h3>
+    <form class="form">
+        <label for="raio">Digite o raio do circulo</label>
+        <input type="number" name="raio" id="raio" placeholder="8,5">
+        <input class="button" type="submit" id="send5" value="Enviar">
+
+        <label for="resultado_area">Resultado da área do círculo</label>
+        <input type="number" name="resultado_area" id="resultado_area">
+        <input class="button" type="submit" id="area" value="Calcular">
+    </form>
+
+    <h3>3 - Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius.</h3>
+    <form class="form">
+        <label for="fahr">Digite a temperatura em graus Fahrenheit</label>
+        <input type="number" name="fahr" id="fahr" placeholder="8,5">
+        <input class="button" type="submit" id="send6" value="Enviar">
+
+        <label for="resultado_celsius">Resultado da temperatura em graus Celsius</label>
+        <input type="number" name="resultado_celsius" id="resultado_celsius">
+        <input class="button" type="submit" id="celsius" value="Calcular">
+    </form>
+    <h3>4 - Faça um programa que calcule e mostre a área e o perímetro de uma sala retangular cujas medidas são fornecidas pelo usuário.</h3>
+    <form class="form">
+        <label for="fahr">Digite o comprimento da sala</label>
+        <input type="number" name="comp" id="comp" placeholder="8,5">
+        <input class="button" type="submit" id="send7" value="Enviar">
+        <label for="fahr">Digite a largura da sala</label>
+        <input type="number" name="larg" id="larg" placeholder="8,5">
+        <input class="button" type="submit" id="send8" value="Enviar">
+
+        <label for="resultado_area_sl">Resultado área da sala</label>
+        <input type="number" name="resultado_area_s" id="resultado_area_s">
+        <input class="button" type="submit" id="resultado_area_sala" value="Calcular">
+
+        <label for="resultado_perimetro">Resultado perímetro da sala</label>
+        <input type="number" name="resultado_p" id="resultado_p">
+        <input class="button" type="submit" id="resultado_perimetro" value="Calcular">
+    </form>
+    <h3>5 - Escreva um programa para ler as dimensões de uma cozinha retangular, em seguida calcular e escrever a quantidade de caixas de azulejos necessarias para cobrir o chão da cozinha. Cada caixa de azulejos possui 2,5 m2.</h3>
+    <form class="form">
+        <label for="comp_coz">Digite o comprimento da cozinha</label>
+        <input type="number" name="comp_coz" id="comp_coz" placeholder="8,5">
+        <input class="button" type="submit" id="send9" value="Enviar">
+
+        <label for="larg_coz">Digite a largura da cozinha</label>
+        <input type="number" name="larg_coz" id="larg_coz" placeholder="8,5">
+        <input class="button" type="submit" id="send10" value="Enviar">
+
+        <label for="resultado_azul">Resultado quantidade de caixas de azuleijos</label>
+        <input type="number" name="resultado_azul0" id="resultado_azul0">
+        <input class="button" type="submit" id="resultado_azul" value="Calcular">
+    </form>
     <script src="js/script.js"></script>
 </body>
 
